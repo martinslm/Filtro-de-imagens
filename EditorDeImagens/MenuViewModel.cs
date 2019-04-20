@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Windows;
 
@@ -10,6 +6,7 @@ namespace EditorDeImagens
 {
     class MenuViewModel
     {
+        public ColorConvertedBitmapExtension imagemSelecionada;
         private ICommand _filtroNegativoCommand;
         private ICommand _filtroEscalasCommand;
         private ICommand _filtroRuidosCommand;
@@ -50,7 +47,7 @@ namespace EditorDeImagens
 
         private void InstanciarCommands()
         {
-            _filtroNegativoCommand = new CommandHandler(p => Negativo());
+           _filtroNegativoCommand = new CommandHandler(p => Negativo());
            _filtroEscalasCommand = new CommandHandler(p => Escalas());
            _filtroRuidosCommand = new CommandHandler(p => Ruidos());
            _filtroBlurCommand = new CommandHandler(p => Blur()); 
@@ -61,32 +58,37 @@ namespace EditorDeImagens
 
         private void Binario()
         {
-            throw new NotImplementedException();
+            AbrirTelaSelecaoImagem();
+     
         }
 
         private void Limiarizacao()
         {
-            throw new NotImplementedException();
+            AbrirTelaSelecaoImagem();
         }
 
         private void Blur()
         {
-            throw new NotImplementedException();
+            AbrirTelaSelecaoImagem();
         }
 
         private void Ruidos()
         {
-            throw new NotImplementedException();
+            AbrirTelaSelecaoImagem();
+            
+            //larissa
         }
 
         private void Escalas()
         {
-            throw new NotImplementedException();
+            AbrirTelaSelecaoImagem();
+            //larissa
         }
 
         private void Negativo()
         {
-            throw new NotImplementedException();
+            AbrirTelaSelecaoImagem();
+            //larissa
         }
     }
 }

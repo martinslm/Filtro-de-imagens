@@ -1,11 +1,12 @@
 ﻿<Window x:Class="EditorDeImagens.Menu"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
              xmlns:local="clr-namespace:EditorDeImagens"
-        mc:Ignorable="d"
+             mc:Ignorable="d"
         Title="Editor De Filtros" Height="300" Width="650">
     <Grid>
         <Label HorizontalAlignment="Center" FontSize="30" FontWeight="UltraLight" Margin="55">Escolha um Filtro</Label>
@@ -15,6 +16,7 @@
                     Height="35" 
                     FontWeight="UltraLight" 
                     BorderBrush="LightGray"
+                    CommandParameter="{Binding}"
                     Command="{Binding FiltroNegativoCommand}"
                     >Filtro Negativo</Button>
             <Button Background="LightGray" 
@@ -22,19 +24,18 @@
                     Height="35" 
                     FontWeight="UltraLight" 
                     BorderBrush="LightGray"
+                    CommandParameter="{Binding}"
                     Command="{Binding FiltroEscalasCommand}"
-                    FontFamily="Century Gothic"
-                    >
-                <Button.Effect>
-                    <DropShadowEffect BlurRadius="5" Color="#FF323131" Opacity="0.3"/>
-                </Button.Effect> Filtro Escalas de Cinza</Button>
+                >
+                 Filtro Escalas de Cinza</Button>
             <Button Background="LightGray" 
                     Padding="5" 
                     Margin="5" 
                     Height="35" 
                     FontWeight="UltraLight" 
-                    BorderBrush="LightGray"
-                     Command="{Binding FiltroRuidosCommand}"
+                    BorderBrush="LightGray"  
+                    CommandParameter="{Binding}"
+                    Command="{Binding FiltroRuidosCommand}"
                     >Filtro Ruidos</Button>
             <Button Background="LightGray" 
                     Padding="5" 
@@ -42,7 +43,8 @@
                     Height="35" 
                     FontWeight="UltraLight" 
                     BorderBrush="LightGray"
-                     Command="{Binding FiltroBlurCommand}"
+                    CommandParameter="{Binding}"
+                    Command="{Binding FiltroBlurCommand}"
                     >Filtro Box Blur</Button>
             <Button Background="LightGray" 
                     Padding="5" 
@@ -50,6 +52,7 @@
                     Height="35" 
                     FontWeight="UltraLight" 
                     BorderBrush="LightGray"
+                    CommandParameter="{Binding}"
                     Command="{Binding FiltroLimiarizacaoCommand}">Filtro Limiarização</Button>
             <Button Background="LightGray" 
                     Padding="5" 
@@ -57,6 +60,7 @@
                     Height="35" 
                     FontWeight="UltraLight" 
                     BorderBrush="LightGray"
+                    CommandParameter="{Binding}"
                     Command="{Binding FiltroBinarioCommand}"
                     >Filtro Binário</Button>
         </StackPanel>
