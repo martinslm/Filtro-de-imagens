@@ -34,7 +34,6 @@
             this.btnBinario = new MaterialSkin.Controls.MaterialFlatButton();
             this.btnBlur = new MaterialSkin.Controls.MaterialFlatButton();
             this.btnRuido = new MaterialSkin.Controls.MaterialFlatButton();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.labelResultado = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
@@ -44,7 +43,7 @@
             this.btnNegativo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnNegativo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnNegativo.Depth = 0;
-            this.btnNegativo.Location = new System.Drawing.Point(6, 86);
+            this.btnNegativo.Location = new System.Drawing.Point(11, 116);
             this.btnNegativo.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnNegativo.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnNegativo.Name = "btnNegativo";
@@ -61,7 +60,7 @@
             this.btnEscalasDeCinza.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnEscalasDeCinza.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnEscalasDeCinza.Depth = 0;
-            this.btnEscalasDeCinza.Location = new System.Drawing.Point(215, 86);
+            this.btnEscalasDeCinza.Location = new System.Drawing.Point(220, 116);
             this.btnEscalasDeCinza.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEscalasDeCinza.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEscalasDeCinza.Name = "btnEscalasDeCinza";
@@ -78,7 +77,7 @@
             this.btnLimiarizacao.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnLimiarizacao.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnLimiarizacao.Depth = 0;
-            this.btnLimiarizacao.Location = new System.Drawing.Point(93, 86);
+            this.btnLimiarizacao.Location = new System.Drawing.Point(98, 116);
             this.btnLimiarizacao.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnLimiarizacao.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLimiarizacao.Name = "btnLimiarizacao";
@@ -95,7 +94,7 @@
             this.btnBinario.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnBinario.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnBinario.Depth = 0;
-            this.btnBinario.Location = new System.Drawing.Point(202, 134);
+            this.btnBinario.Location = new System.Drawing.Point(207, 164);
             this.btnBinario.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnBinario.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnBinario.Name = "btnBinario";
@@ -112,7 +111,7 @@
             this.btnBlur.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnBlur.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnBlur.Depth = 0;
-            this.btnBlur.Location = new System.Drawing.Point(103, 134);
+            this.btnBlur.Location = new System.Drawing.Point(108, 164);
             this.btnBlur.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnBlur.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnBlur.Name = "btnBlur";
@@ -129,7 +128,7 @@
             this.btnRuido.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnRuido.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnRuido.Depth = 0;
-            this.btnRuido.Location = new System.Drawing.Point(16, 134);
+            this.btnRuido.Location = new System.Drawing.Point(21, 164);
             this.btnRuido.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnRuido.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnRuido.Name = "btnRuido";
@@ -140,25 +139,12 @@
             this.btnRuido.UseVisualStyleBackColor = false;
             this.btnRuido.Click += new System.EventHandler(this.btnRuido_Click);
             // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(56, 36);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(167, 19);
-            this.materialLabel1.TabIndex = 6;
-            this.materialLabel1.Text = "SELECIONE UM FILTRO";
-            // 
             // labelResultado
             // 
             this.labelResultado.AutoSize = true;
             this.labelResultado.Depth = 0;
             this.labelResultado.Font = new System.Drawing.Font("Roboto", 11F);
-            this.labelResultado.ForeColor = System.Drawing.Color.Green;
+            this.labelResultado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labelResultado.Location = new System.Drawing.Point(0, 213);
             this.labelResultado.MouseState = MaterialSkin.MouseState.HOVER;
             this.labelResultado.Name = "labelResultado";
@@ -171,7 +157,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.labelResultado);
-            this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.btnRuido);
             this.Controls.Add(this.btnBlur);
             this.Controls.Add(this.btnBinario);
@@ -179,7 +164,7 @@
             this.Controls.Add(this.btnEscalasDeCinza);
             this.Controls.Add(this.btnNegativo);
             this.Name = "Menu";
-            this.Text = "Editor de Imagens";
+            this.Text = "Selecione um Filtro";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,7 +178,6 @@
         private MaterialSkin.Controls.MaterialFlatButton btnBinario;
         private MaterialSkin.Controls.MaterialFlatButton btnBlur;
         private MaterialSkin.Controls.MaterialFlatButton btnRuido;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel labelResultado;
     }
 }
