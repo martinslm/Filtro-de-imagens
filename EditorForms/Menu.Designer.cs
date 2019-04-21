@@ -35,6 +35,7 @@
             this.btnBlur = new MaterialSkin.Controls.MaterialFlatButton();
             this.btnRuido = new MaterialSkin.Controls.MaterialFlatButton();
             this.labelResultado = new MaterialSkin.Controls.MaterialLabel();
+            this.resultado = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
             // btnNegativo
@@ -151,11 +152,25 @@
             this.labelResultado.Size = new System.Drawing.Size(0, 19);
             this.labelResultado.TabIndex = 7;
             // 
+            // resultado
+            // 
+            this.resultado.AutoSize = true;
+            this.resultado.BackColor = System.Drawing.Color.Transparent;
+            this.resultado.Depth = 0;
+            this.resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.resultado.ForeColor = System.Drawing.Color.Lime;
+            this.resultado.Location = new System.Drawing.Point(20, 219);
+            this.resultado.MouseState = MaterialSkin.MouseState.HOVER;
+            this.resultado.Name = "resultado";
+            this.resultado.Size = new System.Drawing.Size(0, 18);
+            this.resultado.TabIndex = 8;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.resultado);
             this.Controls.Add(this.labelResultado);
             this.Controls.Add(this.btnRuido);
             this.Controls.Add(this.btnBlur);
@@ -179,6 +194,7 @@
         private MaterialSkin.Controls.MaterialFlatButton btnBlur;
         private MaterialSkin.Controls.MaterialFlatButton btnRuido;
         private MaterialSkin.Controls.MaterialLabel labelResultado;
+        private MaterialSkin.Controls.MaterialLabel resultado;
     }
 }
 

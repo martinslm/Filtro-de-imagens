@@ -124,7 +124,7 @@ namespace EditorForms
                 alturaImagem = imagemOriginal.Height;
                 return true;
             }
-            labelResultado.Text = "Nenhuma imagem foi selecionada";
+            resultado.Text = "Nenhuma imagem foi selecionada";
             return false;
         }
 
@@ -136,7 +136,7 @@ namespace EditorForms
             if (salvarfoto.ShowDialog() == DialogResult.OK)
             {
                 imagemOriginal.Save(salvarfoto.FileName);
-                labelResultado.Text = "Imagem salva com sucesso!";
+                resultado.Text = "Imagem salva com sucesso!";
             }
         }
     }
