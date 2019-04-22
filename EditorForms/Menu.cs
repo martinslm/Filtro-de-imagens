@@ -87,9 +87,9 @@ namespace EditorForms
   
                         int a = pixel.A;
 
-                        if (contador % 2500 == 0)
+                        if (contador % 7 == 0)
                             imagemOriginal.SetPixel(larg, alt, Color.FromArgb(a, 0, 0, 0));
-                        if (contador % 2500.5 == 0)
+                        if (contador % 11 == 0)
                             imagemOriginal.SetPixel(larg, alt, Color.FromArgb(a, 216, 216, 191));
                         contador++;
                     }
