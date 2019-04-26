@@ -36,6 +36,9 @@
             this.btnRuido = new MaterialSkin.Controls.MaterialFlatButton();
             this.labelResultado = new MaterialSkin.Controls.MaterialLabel();
             this.resultado = new MaterialSkin.Controls.MaterialLabel();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.btnSalvar = new MaterialSkin.Controls.MaterialRaisedButton();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // btnNegativo
@@ -157,20 +160,44 @@
             this.resultado.AutoSize = true;
             this.resultado.BackColor = System.Drawing.Color.Transparent;
             this.resultado.Depth = 0;
-            this.resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.resultado.ForeColor = System.Drawing.Color.Lime;
+            this.resultado.Font = new System.Drawing.Font("Roboto", 11F);
+            this.resultado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.resultado.Location = new System.Drawing.Point(20, 219);
             this.resultado.MouseState = MaterialSkin.MouseState.HOVER;
             this.resultado.Name = "resultado";
-            this.resultado.Size = new System.Drawing.Size(0, 18);
+            this.resultado.Size = new System.Drawing.Size(0, 19);
             this.resultado.TabIndex = 8;
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.Location = new System.Drawing.Point(302, 81);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(229, 223);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.TabIndex = 9;
+            this.pictureBox.TabStop = false;
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Depth = 0;
+            this.btnSalvar.Location = new System.Drawing.Point(77, 238);
+            this.btnSalvar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Primary = true;
+            this.btnSalvar.Size = new System.Drawing.Size(136, 35);
+            this.btnSalvar.TabIndex = 10;
+            this.btnSalvar.Text = "Salvar Imagem";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(543, 316);
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.resultado);
             this.Controls.Add(this.labelResultado);
             this.Controls.Add(this.btnRuido);
@@ -181,6 +208,7 @@
             this.Controls.Add(this.btnNegativo);
             this.Name = "Menu";
             this.Text = "Selecione um Filtro";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,6 +224,8 @@
         private MaterialSkin.Controls.MaterialFlatButton btnRuido;
         private MaterialSkin.Controls.MaterialLabel labelResultado;
         private MaterialSkin.Controls.MaterialLabel resultado;
+        private System.Windows.Forms.PictureBox pictureBox;
+        private MaterialSkin.Controls.MaterialRaisedButton btnSalvar;
     }
 }
 

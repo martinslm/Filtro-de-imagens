@@ -36,7 +36,7 @@ namespace EditorForms
                         imagemOriginal.SetPixel(larg, alt, Color.FromArgb(a, r, g, b));
                     }
                 }
-                SalvarImagem();
+                pictureBox.Image = imagemOriginal;
             }
         }
 
@@ -68,8 +68,7 @@ namespace EditorForms
                         imagemOriginal.SetPixel(larg, alt, Color.FromArgb(a, rgb, rgb, rgb));
                     }
                 }
-                SalvarImagem();
-
+                pictureBox.Image = imagemOriginal;
             }
         }
 
@@ -94,7 +93,7 @@ namespace EditorForms
                         contador++;
                     }
                 }
-                SalvarImagem();
+                pictureBox.Image = imagemOriginal;
             }
         }
 
@@ -138,6 +137,11 @@ namespace EditorForms
                 imagemOriginal.Save(salvarfoto.FileName);
                 resultado.Text = "Imagem salva com sucesso!";
             }
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            SalvarImagem();
         }
     }
 }
