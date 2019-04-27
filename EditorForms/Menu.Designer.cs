@@ -38,6 +38,8 @@
             this.resultado = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.btnSalvar = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btn_red = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btnRed = new MaterialSkin.Controls.MaterialFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -190,12 +192,48 @@
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
+            // btn_red
+            // 
+            this.btn_red.AutoSize = true;
+            this.btn_red.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_red.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_red.Depth = 0;
+            this.btn_red.Location = new System.Drawing.Point(52, 193);
+            this.btn_red.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btn_red.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_red.Name = "btn_red";
+            this.btn_red.Primary = false;
+            this.btn_red.Size = new System.Drawing.Size(37, 36);
+            this.btn_red.TabIndex = 11;
+            this.btn_red.Text = "Red";
+            this.btn_red.UseVisualStyleBackColor = false;
+            this.btn_red.Click += new System.EventHandler(this.Btn_red_Click);
+            // 
+            // btnRed
+            // 
+            this.btnRed.AutoSize = true;
+            this.btnRed.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnRed.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnRed.Depth = 0;
+            this.btnRed.Location = new System.Drawing.Point(192, 193);
+            this.btnRed.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnRed.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnRed.Name = "btnRed";
+            this.btnRed.Primary = false;
+            this.btnRed.Size = new System.Drawing.Size(50, 36);
+            this.btnRed.TabIndex = 12;
+            this.btnRed.Text = "Sépia";
+            this.btnRed.UseVisualStyleBackColor = false;
+            this.btnRed.Click += new System.EventHandler(this.BtnSepia_Click_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(543, 316);
+            this.Controls.Add(this.btnRed);
+            this.Controls.Add(this.btn_red);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.resultado);
@@ -226,6 +264,8 @@
         private MaterialSkin.Controls.MaterialLabel resultado;
         private System.Windows.Forms.PictureBox pictureBox;
         private MaterialSkin.Controls.MaterialRaisedButton btnSalvar;
+        private MaterialSkin.Controls.MaterialFlatButton btn_red;
+        private MaterialSkin.Controls.MaterialFlatButton btnRed;
     }
 }
 
