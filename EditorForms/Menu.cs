@@ -39,7 +39,7 @@ namespace EditorForms
                 pictureBox.Image = imagemOriginal;
             }
         }
-
+        /*
         private void btnLimiarizacao_Click(object sender, EventArgs e)
         {
             if (AbrirTelaSelecaoImagem())
@@ -47,7 +47,7 @@ namespace EditorForms
 
             }
         }
-
+        */
         private void btnEscalasDeCinza_Click(object sender, EventArgs e)
         {
             if (AbrirTelaSelecaoImagem())
@@ -130,7 +130,7 @@ namespace EditorForms
                 pictureBox.Image = imagemOriginal;
             }
         }
-
+        /*
         private void btnBinario_Click(object sender, EventArgs e)
         {
             //ver com a Lari sobre isso
@@ -158,7 +158,7 @@ namespace EditorForms
                 pictureBox.Image = imagemOriginal;
             }
         }
-
+        */
         private void BtnSepia_Click_Click(object sender, EventArgs e)
         {
             if (AbrirTelaSelecaoImagem())
