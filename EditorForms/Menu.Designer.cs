@@ -64,14 +64,14 @@
             this.btnEscalasDeCinza.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnEscalasDeCinza.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnEscalasDeCinza.Depth = 0;
-            this.btnEscalasDeCinza.Location = new System.Drawing.Point(220, 116);
+            this.btnEscalasDeCinza.Location = new System.Drawing.Point(98, 116);
             this.btnEscalasDeCinza.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEscalasDeCinza.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEscalasDeCinza.Name = "btnEscalasDeCinza";
             this.btnEscalasDeCinza.Primary = false;
-            this.btnEscalasDeCinza.Size = new System.Drawing.Size(38, 36);
+            this.btnEscalasDeCinza.Size = new System.Drawing.Size(135, 36);
             this.btnEscalasDeCinza.TabIndex = 1;
-            this.btnEscalasDeCinza.Text = "P&B";
+            this.btnEscalasDeCinza.Text = "Escalas de Cinza";
             this.btnEscalasDeCinza.UseVisualStyleBackColor = false;
             this.btnEscalasDeCinza.Click += new System.EventHandler(this.btnEscalasDeCinza_Click);
             // 
@@ -81,7 +81,7 @@
             this.btnBlur.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnBlur.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnBlur.Depth = 0;
-            this.btnBlur.Location = new System.Drawing.Point(108, 164);
+            this.btnBlur.Location = new System.Drawing.Point(124, 164);
             this.btnBlur.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnBlur.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnBlur.Name = "btnBlur";
@@ -98,7 +98,7 @@
             this.btnRuido.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnRuido.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnRuido.Depth = 0;
-            this.btnRuido.Location = new System.Drawing.Point(21, 164);
+            this.btnRuido.Location = new System.Drawing.Point(24, 164);
             this.btnRuido.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnRuido.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnRuido.Name = "btnRuido";
@@ -162,7 +162,7 @@
             this.btn_red.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_red.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_red.Depth = 0;
-            this.btn_red.Location = new System.Drawing.Point(133, 116);
+            this.btn_red.Location = new System.Drawing.Point(254, 116);
             this.btn_red.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn_red.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn_red.Name = "btn_red";
@@ -179,7 +179,7 @@
             this.btnRed.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnRed.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnRed.Depth = 0;
-            this.btnRed.Location = new System.Drawing.Point(220, 164);
+            this.btnRed.Location = new System.Drawing.Point(241, 164);
             this.btnRed.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnRed.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnRed.Name = "btnRed";

@@ -39,15 +39,6 @@ namespace EditorForms
                 pictureBox.Image = imagemOriginal;
             }
         }
-        /*
-        private void btnLimiarizacao_Click(object sender, EventArgs e)
-        {
-            if (AbrirTelaSelecaoImagem())
-            {
-
-            }
-        }
-        */
         private void btnEscalasDeCinza_Click(object sender, EventArgs e)
         {
             if (AbrirTelaSelecaoImagem())
