@@ -103,7 +103,7 @@ namespace EditorForms
             {
                 //int largura = imagemOriginal.Width;
                 //int altura = imagemOriginal.Height;
-                int quantBlur = 10;
+                int quantBlur = 3;
 
                 for (int larg = quantBlur; larg < larguraImagem - quantBlur; larg++)
                 {
